@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import notebook_code   # your exported notebook file
+import notebook_code   
 
 app = Flask(__name__)
 
