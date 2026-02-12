@@ -16,7 +16,7 @@ const categories = [
 const Podcasts = () => {
   return (
     <div className="min-h-screen px-6 md:px-8 py-8">
-      {/* Header */}
+      
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-2">
           <Mic2 className="w-8 h-8 text-primary" />
@@ -27,7 +27,7 @@ const Podcasts = () => {
         </p>
       </div>
 
-      {/* Categories */}
+      
       <div className="flex gap-2 overflow-x-auto pb-4 mb-8 scrollbar-hide">
         {categories.map((category, index) => (
           <button
@@ -43,7 +43,7 @@ const Podcasts = () => {
         ))}
       </div>
 
-      {/* Trending */}
+      
       <section className="mb-10">
         <div className="flex items-center gap-3 mb-6">
           <TrendingUp className="w-5 h-5 text-primary" />
@@ -56,7 +56,7 @@ const Podcasts = () => {
         </div>
       </section>
 
-      {/* New Episodes */}
+      
       <section className="mb-10">
         <div className="flex items-center gap-3 mb-6">
           <Clock className="w-5 h-5 text-primary" />
@@ -69,7 +69,7 @@ const Podcasts = () => {
         </div>
       </section>
 
-      {/* For You */}
+  
       <section className="mb-10">
         <div className="flex items-center gap-3 mb-6">
           <Mic2 className="w-5 h-5 text-primary" />
