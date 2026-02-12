@@ -51,7 +51,7 @@ export const AudioPlayer = () => {
   return (
     <footer className="fixed bottom-0 left-0 right-0 h-24 bg-player border-t border-border px-4 z-50">
       <div className="h-full max-w-screen-2xl mx-auto grid grid-cols-3 items-center gap-4">
-        {/* Track Info */}
+        
         <div className="flex items-center gap-4">
           <img
             src={currentTrack.coverUrl}
@@ -71,7 +71,7 @@ export const AudioPlayer = () => {
           </button>
         </div>
 
-        {/* Player Controls */}
+        
         <div className="flex flex-col items-center gap-2">
           <div className="flex items-center gap-4">
             <button
@@ -124,7 +124,7 @@ export const AudioPlayer = () => {
             </button>
           </div>
 
-          {/* Progress Bar */}
+          
           <div className="flex items-center gap-2 w-full max-w-md">
             <span className="text-xs text-muted-foreground w-10 text-right">
               {formatTime(progress)}
@@ -142,7 +142,7 @@ export const AudioPlayer = () => {
           </div>
         </div>
 
-        {/* Volume & Extra Controls */}
+        
         <div className="flex items-center justify-end gap-4">
           <button className="hidden md:block p-2 text-muted-foreground hover:text-foreground transition-colors">
             <ListMusic className="w-4 h-4" />
