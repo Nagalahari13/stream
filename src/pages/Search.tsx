@@ -34,7 +34,7 @@ const Search = () => {
 
   return (
     <div className="min-h-screen px-6 md:px-8 py-8">
-      {/* Search Header */}
+      
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-foreground mb-6">Search</h1>
         
@@ -58,7 +58,7 @@ const Search = () => {
         </div>
       </div>
 
-      {/* Search Results */}
+      
       {query ? (
         <div className="space-y-8">
           {filteredTracks.length > 0 && (
@@ -95,7 +95,7 @@ const Search = () => {
           )}
         </div>
       ) : (
-        /* Browse Categories */
+        
         <section>
           <h2 className="text-xl font-bold text-foreground mb-6">Browse All</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
