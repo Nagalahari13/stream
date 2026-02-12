@@ -6,7 +6,7 @@ import { useAudio } from '@/contexts/AudioContext';
 const LikedSongs = () => {
   const { playPlaylist } = useAudio();
 
-  // In a real app, this would come from user data
+  
   const likedTracks = demoTracks.slice(0, 4);
 
   const totalDuration = likedTracks.reduce((acc, track) => acc + track.duration, 0);
@@ -14,18 +14,18 @@ const LikedSongs = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
+      
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/30 to-background" />
         
         <div className="relative px-6 md:px-8 pt-12 pb-8">
           <div className="flex flex-col md:flex-row items-center md:items-end gap-6">
-            {/* Cover */}
+            
             <div className="w-48 h-48 md:w-56 md:h-56 rounded-xl overflow-hidden shadow-2xl flex-shrink-0 gradient-primary flex items-center justify-center">
               <Heart className="w-24 h-24 text-primary-foreground" />
             </div>
 
-            {/* Info */}
+            
             <div className="text-center md:text-left">
               <p className="text-sm font-medium text-muted-foreground mb-2">Playlist</p>
               <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
@@ -45,7 +45,7 @@ const LikedSongs = () => {
         </div>
       </div>
 
-      {/* Actions */}
+      
       <div className="px-6 md:px-8 py-6">
         <button
           onClick={() => playPlaylist(likedTracks)}
@@ -55,7 +55,7 @@ const LikedSongs = () => {
         </button>
       </div>
 
-      {/* Track List */}
+      
       <div className="px-6 md:px-8 pb-8">
         {likedTracks.length > 0 ? (
           <div className="bg-card rounded-xl p-4">
