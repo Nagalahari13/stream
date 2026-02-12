@@ -19,7 +19,7 @@ export const Sidebar = () => {
 
   return (
     <aside className="hidden md:flex flex-col w-64 bg-sidebar h-full p-4 gap-6">
-      {/* Logo */}
+      
       <Link to="/" className="flex items-center gap-3 px-2 py-4">
         <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
           <ListMusic className="w-5 h-5 text-primary-foreground" />
@@ -27,7 +27,7 @@ export const Sidebar = () => {
         <span className="text-xl font-bold text-foreground">Melodify</span>
       </Link>
 
-      {/* Main Navigation */}
+      
       <nav className="flex flex-col gap-1">
         {navItems.map((item) => {
           const isActive = location.pathname === item.path;
@@ -50,10 +50,10 @@ export const Sidebar = () => {
         })}
       </nav>
 
-      {/* Divider */}
+      
       <div className="h-px bg-sidebar-border" />
 
-      {/* Library Section */}
+      
       <nav className="flex flex-col gap-1">
         {libraryItems.map((item) => {
           const isActive = location.pathname === item.path;
@@ -76,10 +76,10 @@ export const Sidebar = () => {
         })}
       </nav>
 
-      {/* Divider */}
+      
       <div className="h-px bg-sidebar-border" />
 
-      {/* Playlists */}
+      
       <div className="flex-1 overflow-y-auto">
         <p className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
           Playlists
@@ -97,7 +97,7 @@ export const Sidebar = () => {
         </div>
       </div>
 
-      {/* User Section */}
+      
       <div className="pt-4 border-t border-sidebar-border">
         <Link
           to="/auth"
