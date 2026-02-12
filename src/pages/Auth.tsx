@@ -16,7 +16,7 @@ const Auth = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Demo - show toast message
+    
     toast({
       title: isLogin ? 'Login feature coming soon!' : 'Sign up feature coming soon!',
       description: 'Connect your Flask backend to enable authentication.',
@@ -25,14 +25,14 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-4">
-      {/* Background */}
+    
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       </div>
 
       <div className="relative w-full max-w-md">
-        {/* Back Button */}
+        
         <Link
           to="/"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
@@ -41,9 +41,9 @@ const Auth = () => {
           Back to Home
         </Link>
 
-        {/* Card */}
+        
         <div className="bg-card rounded-2xl p-8 shadow-2xl border border-border">
-          {/* Logo */}
+          
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
               <ListMusic className="w-6 h-6 text-primary-foreground" />
@@ -51,7 +51,7 @@ const Auth = () => {
             <span className="text-2xl font-bold text-foreground">Melodify</span>
           </div>
 
-          {/* Title */}
+          
           <h1 className="text-2xl font-bold text-foreground text-center mb-2">
             {isLogin ? 'Welcome back' : 'Create an account'}
           </h1>
@@ -61,7 +61,7 @@ const Auth = () => {
               : 'Start your music journey today'}
           </p>
 
-          {/* Form */}
+          
           <form onSubmit={handleSubmit} className="space-y-4">
             {!isLogin && (
               <div>
@@ -140,14 +140,14 @@ const Auth = () => {
             </Button>
           </form>
 
-          {/* Divider */}
+          
           <div className="flex items-center gap-4 my-6">
             <div className="flex-1 h-px bg-border" />
             <span className="text-sm text-muted-foreground">or</span>
             <div className="flex-1 h-px bg-border" />
           </div>
 
-          {/* Social Login */}
+          
           <div className="space-y-3">
             <Button
               type="button"
@@ -176,7 +176,7 @@ const Auth = () => {
             </Button>
           </div>
 
-          {/* Toggle */}
+          
           <p className="text-center text-sm text-muted-foreground mt-6">
             {isLogin ? "Don't have an account?" : 'Already have an account?'}{' '}
             <button
@@ -189,7 +189,7 @@ const Auth = () => {
           </p>
         </div>
 
-        {/* Footer */}
+        
         <p className="text-center text-xs text-muted-foreground mt-8">
           By continuing, you agree to our Terms of Service and Privacy Policy
         </p>
