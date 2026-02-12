@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const Library = () => {
   return (
     <div className="min-h-screen px-6 md:px-8 py-8">
-      {/* Header */}
+      
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-3xl font-bold text-foreground">Your Library</h1>
         <button className="p-2 hover:bg-secondary rounded-full transition-colors">
@@ -15,7 +15,7 @@ const Library = () => {
         </button>
       </div>
 
-      {/* Tabs */}
+      
       <Tabs defaultValue="playlists" className="w-full">
         <TabsList className="bg-secondary mb-8">
           <TabsTrigger value="playlists" className="gap-2">
@@ -32,10 +32,10 @@ const Library = () => {
           </TabsTrigger>
         </TabsList>
 
-        {/* Playlists Tab */}
+        
         <TabsContent value="playlists">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
-            {/* Create Playlist Card */}
+            
             <div className="bg-card rounded-xl p-4 cursor-pointer hover:bg-secondary transition-all group">
               <div className="aspect-square rounded-lg bg-gradient-to-br from-muted to-muted-foreground/20 mb-4 flex items-center justify-center">
                 <Plus className="w-12 h-12 text-muted-foreground group-hover:text-foreground transition-colors" />
@@ -57,7 +57,7 @@ const Library = () => {
           </div>
         </TabsContent>
 
-        {/* Songs Tab */}
+        
         <TabsContent value="songs">
           <div className="bg-card rounded-xl p-4">
             <div className="flex items-center gap-3 mb-4 text-muted-foreground">
@@ -70,7 +70,7 @@ const Library = () => {
           </div>
         </TabsContent>
 
-        {/* Podcasts Tab */}
+        
         <TabsContent value="podcasts">
           <div className="text-center py-16">
             <Mic2 className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
