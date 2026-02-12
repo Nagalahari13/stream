@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      
       <section className="relative px-6 py-12 md:px-8 overflow-hidden">
         <div className="absolute inset-0 gradient-primary opacity-10" />
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
@@ -32,7 +32,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Quick Play Section */}
+      
       <section className="px-6 md:px-8 mb-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {demoTracks.slice(0, 4).map((track) => (
@@ -41,7 +41,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Playlists */}
+      
       <section className="px-6 md:px-8 mb-10">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Trending Now */}
+      
       <section className="px-6 md:px-8 mb-10">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
@@ -88,7 +88,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Podcasts */}
+      
       <section className="px-6 md:px-8 mb-10">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
@@ -106,7 +106,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Recently Played */}
+      
       <section className="px-6 md:px-8 mb-10">
         <div className="flex items-center gap-3 mb-6">
           <Clock className="w-5 h-5 text-muted-foreground" />
