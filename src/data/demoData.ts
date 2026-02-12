@@ -1,6 +1,6 @@
 import { Track } from '@/contexts/AudioContext';
 
-// Demo tracks using free audio samples
+
 export const demoTracks: Track[] = [
   {
     id: '1',
