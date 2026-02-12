@@ -10,18 +10,9 @@ interface MainLayoutProps {
 export const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div className="flex h-screen bg-background overflow-hidden">
-      {/* Sidebar - Desktop */}
+      
       <Sidebar />
-
-      {/* Main Content */}
-      <main className="flex-1 overflow-y-auto pb-32 md:pb-28">
-        {children}
-      </main>
-
-      {/* Mobile Navigation */}
-      <MobileNav />
-
-      {/* Audio Player */}
+      
       <AudioPlayer />
     </div>
   );
